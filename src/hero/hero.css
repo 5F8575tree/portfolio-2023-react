@@ -3,11 +3,12 @@
   margin-top: 24px;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
 }
 
 .hero_top {
   padding: 0 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tag {

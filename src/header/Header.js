@@ -1,7 +1,12 @@
 function Header() {
   return (
     <div className="header">
-      <h1>Hello World!</h1>
+      <div className="logo">MJR</div>
+      <div className="menu-toggle">
+        <div className="line-1"></div>
+        <div className="line-2"></div>
+        <div className="line-3"></div>
+      </div>
     </div>
   );
 }

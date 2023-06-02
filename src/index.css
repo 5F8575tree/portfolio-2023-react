@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Yuji+Hentaigana+Akari&display=swap");
+
+@import "./header/header.css";
+@import "./hero/hero.css";
+
 * {
   all: unset;
   display: revert;
 }
 
-*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+*:where(:not(iframe, canvas, svg, video):not(svg *)) {
   all: unset;
   display: revert;
 }
@@ -24,14 +29,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #fffdf9;
+  color: #333;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.header {
-  height: 100px;
-  background-color: bisque;
 }

@@ -15,6 +15,14 @@ const Contact = () => {
       <div className="hero_btn">
         <p>Hire Me!</p>
       </div>
+      <a
+        href="mailto:mark.jeffrey.rawlins@gmail.com"
+        target="_blank"
+        rel="noreferrer"
+        className="email_link"
+      >
+        mark.jeffrey.rawlins@gmail.com
+      </a>
     </div>
   );
 };

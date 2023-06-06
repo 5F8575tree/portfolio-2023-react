@@ -8,7 +8,7 @@ const Contact = () => {
         </p>
         <p className="contact_text_bottom">
           {" "}
-          I'm always excited to hear new ideas, or even just a friendly
+          I'm always excited to hear new ideas, or even just a friendly{" "}
           <span>'Hello!'</span>
         </p>
       </div>

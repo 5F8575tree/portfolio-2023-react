@@ -9,6 +9,7 @@
   font-size: 36px;
   font-family: "Yuji Hentaigana Akari", cursive;
   align-self: center;
+  animation: fadeIn 1200ms;
 }
 
 .menu-toggle {

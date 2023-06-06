@@ -6,6 +6,7 @@
 @import "./portfolio/portfolio.css";
 @import "./card/card.css";
 @import "./contact/contact.css";
+@import "./footer/footer.css";
 
 * {
   all: unset;

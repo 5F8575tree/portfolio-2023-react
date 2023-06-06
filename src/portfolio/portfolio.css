@@ -1,0 +1,32 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio_title {
+  font-family: "Lilita One", cursive;
+  font-size: 40px;
+  align-self: center;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.portfolio_nav {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+}
+
+.portfolio_nav ul li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.portfolio_nav ul li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background-color: #333;
+  margin: 0 20px;
+  vertical-align: middle;
+}

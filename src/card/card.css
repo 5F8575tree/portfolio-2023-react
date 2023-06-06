@@ -1,0 +1,24 @@
+.card {
+  height: 176px;
+  width: 278px;
+  margin-bottom: 24px;
+  align-self: center;
+  position: relative;
+}
+
+.card_image {
+  border-radius: 6px;
+}
+
+.card_title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  border: 1px solid #6e5afd;
+  border-radius: 6px;
+  padding: 8px 24px;
+  color: white;
+  backdrop-filter: blur(10px);
+}

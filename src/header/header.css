@@ -3,6 +3,10 @@
   display: flex;
   justify-content: space-between;
   padding: 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(4px);
 }
 
 .logo {
@@ -58,9 +62,16 @@
 
 .mainMenu li a {
   display: inline-block;
-  padding: 16px;
+  padding: 24px;
+  font-size: 1.4rem;
   text-transform: uppercase;
+  cursor: pointer;
   color: #fffdf9;
+}
+
+.mainMenu li a:hover {
+  font-size: 1.425rem;
+  color: #fd6e5a;
 }
 
 .openMenu {
@@ -71,9 +82,14 @@
 }
 
 .icons i {
-  font-size: 2rem;
+  font-size: 2.4rem;
   display: inline-block;
   cursor: pointer;
   color: #fffdf9;
-  margin-right: 8px;
+  margin: 16px;
+  padding-top: 32px;
+}
+
+.icons i:hover {
+  color: #fd6e5a;
 }

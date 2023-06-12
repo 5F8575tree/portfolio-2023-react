@@ -22,6 +22,7 @@ function Hero() {
         className="hero_image"
         src="../../portfolio-photo.jpg"
         alt="Mark Rawlins' head with plain background in grey scale"
+        id="skills"
       />
     </div>
   );

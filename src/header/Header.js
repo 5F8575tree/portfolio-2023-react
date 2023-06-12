@@ -7,6 +7,10 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="header">
       <div className="logo">MJR</div>
@@ -15,16 +19,24 @@ function Header() {
       </div>
       <ul className={`mainMenu ${isMenuOpen ? "open" : ""}`}>
         <li>
-          <a href="#top">Top</a>
+          <a href="#top" onClick={closeMenu}>
+            Top
+          </a>
         </li>
         <li>
-          <a href="#top">Skills</a>
+          <a href="#skills" onClick={closeMenu}>
+            Skills
+          </a>
         </li>
         <li>
-          <a href="#top">Portfolio</a>
+          <a href="#portfolio" onClick={closeMenu}>
+            Portfolio
+          </a>
         </li>
         <li>
-          <a href="#top">Contact</a>
+          <a href="#contact" onClick={closeMenu}>
+            Contact
+          </a>
         </li>
         <div className="closeMenu" onClick={toggleMenu}>
           <i className="fas fa-times"></i>

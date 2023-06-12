@@ -67,7 +67,7 @@ function Skills() {
           <h2 className="skills_box_title">Influences</h2>
         </div>
         <div className="skills_line"></div>
-        <div className="skills_box_influences--bottom">
+        <div className="skills_box_influences--bottom" id="portfolio">
           <p>
             Superflat art, Gustav Klimt, Van Gogh, Tolstoy, Dickens, trees,
             rain, Apple, Barbour, Chopin, Satie, vegetables

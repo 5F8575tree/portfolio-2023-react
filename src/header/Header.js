@@ -15,16 +15,16 @@ function Header() {
       </div>
       <ul className={`mainMenu ${isMenuOpen ? "open" : ""}`}>
         <li>
-          <a href="#">Top</a>
+          <a href="#top">Top</a>
         </li>
         <li>
-          <a href="#">Skills</a>
+          <a href="#top">Skills</a>
         </li>
         <li>
-          <a href="#">Portfolio</a>
+          <a href="#top">Portfolio</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#top">Contact</a>
         </li>
         <div className="closeMenu" onClick={toggleMenu}>
           <i className="fas fa-times"></i>

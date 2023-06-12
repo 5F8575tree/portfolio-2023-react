@@ -30,3 +30,7 @@
   margin: 0 20px;
   vertical-align: middle;
 }
+
+.portfolio_nav ul li.selected {
+  font-weight: bold;
+}

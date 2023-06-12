@@ -4,6 +4,18 @@
   margin-bottom: 24px;
   align-self: center;
   position: relative;
+  animation-name: fadeIn;
+  animation-duration: 1800ms; /* Adjust the duration as needed */
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .card_image {

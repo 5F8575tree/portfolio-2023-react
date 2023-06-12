@@ -1,73 +1,86 @@
-import React, { useEffect, useRef } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Skills() {
-  const iconsRef = useRef([]);
-
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        }
-      });
-    });
-
-    iconsRef.current.forEach((el) => observer.observe(el));
-
-    return () => {
-      observer.disconnect();
-    };
+    Aos.init({ duration: 800 });
   }, []);
 
   return (
     <div className="skills">
       <div className="skills_title">Skills & Influences</div>
       <div className="skills_box">
-        <div
-          className="skills_box_prog--top hidden"
-          ref={(el) => (iconsRef.current[0] = el)}
-        >
+        <div className="skills_box_top">
           <img
             src="../../prog-portfolio.png"
             alt="computer programming icon"
             className="skills_icon"
+            data-aos="fade-in"
           />
-          <h2 className="skills_box_title">Programming</h2>
-        </div>
-        <div className="skills_line"></div>
-        <div className="skills_box_prog--bottom">
-          <p>Ruby, Rails, JavaScript, TypeScript, React, HTML/CSS</p>
+          <h2
+            className="skills_box_title"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+            Programming
+          </h2>
         </div>
         <div className="skills_line"></div>
         <div
-          className="skills_box_design--top hidden"
-          ref={(el) => (iconsRef.current[1] = el)}
+          className="skills_box_bottom"
+          data-aos="fade-up"
+          data-aos-delay="600"
         >
+          <p>Ruby, Rails, JavaScript, TypeScript, React, HTML/CSS</p>
+        </div>
+        <div className="skills_line"></div>
+        <div className="skills_box_top">
           <img
             src="../../design-icon-portfolio.png"
             alt="design icon"
             className="skills_icon"
+            data-aos="fade-in"
           />
-          <h2 className="skills_box_title">Design</h2>
-        </div>
-        <div className="skills_line"></div>
-        <div className="skills_box_design--bottom">
-          <p>Figma, Slack, Github, Microsoft Suite, Adobe</p>
+          <h2
+            className="skills_box_title"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+            Design
+          </h2>
         </div>
         <div className="skills_line"></div>
         <div
-          className="skills_box_influences--top hidden"
-          ref={(el) => (iconsRef.current[2] = el)}
+          className="skills_box_bottom"
+          data-aos="fade-up"
+          data-aos-delay="600"
         >
+          <p>Figma, Slack, Github, Microsoft Suite, Adobe</p>
+        </div>
+        <div className="skills_line"></div>
+        <div className="skills_box_top">
           <img
             src="../../influences-icon-portfolio.png"
             alt="influences icon"
             className="skills_icon"
+            data-aos="fade-in"
           />
-          <h2 className="skills_box_title">Influences</h2>
+          <h2
+            className="skills_box_title"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+            Influences
+          </h2>
         </div>
         <div className="skills_line"></div>
-        <div className="skills_box_influences--bottom" id="portfolio">
+        <div
+          className="skills_box_bottom"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          id="portfolio"
+        >
           <p>
             Superflat art, Gustav Klimt, Van Gogh, Tolstoy, Dickens, trees,
             rain, Apple, Barbour, Chopin, Satie, vegetables

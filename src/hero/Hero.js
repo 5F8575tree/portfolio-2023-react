@@ -14,9 +14,14 @@ function Hero() {
           are <span>Figma</span>, Ruby on <span>Rails</span>, and{" "}
           <span>React</span>.
         </div>
-        <div className="hero_btn">
+        <a
+          href="mailto:mark.jeffrey.rawlins@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          className="hero_btn"
+        >
           <p>Contact Me</p>
-        </div>
+        </a>
       </div>
       <img
         className="hero_image"

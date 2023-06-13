@@ -1,7 +1,7 @@
 .card {
   height: 176px;
   width: 278px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
   align-self: center;
   position: relative;
   animation-name: fadeIn;
@@ -25,12 +25,43 @@
 .card_title {
   position: absolute;
   bottom: 20px;
-  left: 20px;
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
+  text-transform: uppercase;
   border: 1px solid #6e5afd;
   border-radius: 6px;
   padding: 8px 24px;
-  color: white;
+  margin-left: 36px;
+  color: #fffdf9;
   backdrop-filter: blur(10px);
+}
+
+.card_title > i {
+  font-size: 10px;
+  margin-left: 8px;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-arrow-left {
+  left: 20px;
+}
+
+.custom-arrow-right {
+  right: 20px;
+}
+
+.custom-arrow svg {
+  width: 36px;
+  height: 36px;
+  fill: none; /* Set the fill to transparent */
+  stroke: #fffdf9; /* Set the stroke color to purple */
+  stroke-width: 0.5px; /* Adjust the stroke width as needed */
 }

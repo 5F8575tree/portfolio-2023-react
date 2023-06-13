@@ -15,9 +15,14 @@ const Contact = () => {
           <span className="underline--small">'Hello!'</span>
         </p>
       </div>
-      <div className="hero_btn">
+      <a
+        href="mailto:mark.jeffrey.rawlins@gmail.com"
+        target="_blank"
+        rel="noreferrer"
+        className="hero_btn"
+      >
         <p>Hire Me!</p>
-      </div>
+      </a>
       <a
         href="mailto:mark.jeffrey.rawlins@gmail.com"
         target="_blank"

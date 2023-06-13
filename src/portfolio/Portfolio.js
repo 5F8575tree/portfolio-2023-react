@@ -18,40 +18,20 @@ function Portfolio() {
     if (selectedOption === "All") {
       return (
         <>
-          <Card
-            title="ii-Vent"
-            image="../../daniela-mota-TxZXttbojmA-unsplash.jpeg"
-          />
-          <Card
-            title="MyReads"
-            image="../../Cassette Tape - pexels-markus-spiske-92083.png"
-          />
-          <Card
-            title="Books B'n'B"
-            image="../../milena-trifonova-pHqt1DsHCx0-unsplash.jpeg"
-          />
+          <Card title="ii-Vent" image="../../ii-vent.png" />
+          <Card title="MyReads" image="../../my-reads.png" />
+          <Card title="Books B'n'B" image="../../books-bnb.png" />
         </>
       );
     } else if (selectedOption === "Ruby on Rails") {
       return (
         <>
-          <Card
-            title="ii-Vent"
-            image="../../daniela-mota-TxZXttbojmA-unsplash.jpeg"
-          />
-          <Card
-            title="Books B'n'B"
-            image="../../milena-trifonova-pHqt1DsHCx0-unsplash.jpeg"
-          />
+          <Card title="ii-Vent" image="../../ii-vent.png" />
+          <Card title="Books B'n'B" image="../../books-bnb.png" />
         </>
       );
     } else if (selectedOption === "ReactJS") {
-      return (
-        <Card
-          title="MyReads"
-          image="../../Cassette Tape - pexels-markus-spiske-92083.png"
-        />
-      );
+      return <Card title="MyReads" image="../../my-reads.png" />;
     } else if (selectedOption === "Design Concepts") {
       return (
         <Card
@@ -96,6 +76,7 @@ function Portfolio() {
       <div className="cards" data-aos="fade-in">
         {renderCards()}
       </div>
+      <div id="contact"></div>
     </div>
   );
 }

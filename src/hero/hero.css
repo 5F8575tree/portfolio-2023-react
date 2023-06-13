@@ -64,6 +64,7 @@
 .hero img {
   padding: 0;
   animation: fadeIn 1200ms;
+  margin-top: 40px;
 }
 
 @keyframes fadeIn {

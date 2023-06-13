@@ -11,12 +11,7 @@ const CardSlide = ({ title, image, link }) => {
     <div className="card_slide">
       <div className="card_intro">
         <img className="card_image" src={image} alt="website screenshot" />
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card_title"
-        >
+        <a href={link} target="_blank" rel="noreferrer" className="card_title">
           {title}
           <i class="fa-solid fa-up-right-from-square"></i>
         </a>
@@ -25,7 +20,7 @@ const CardSlide = ({ title, image, link }) => {
   );
 };
 
-const Card = ({ title, image, link }) => {
+const Card = ({ title, image, link, about, gitLink }) => {
   const sliderRef = useRef(null);
 
   useEffect(() => {
@@ -57,12 +52,31 @@ const Card = ({ title, image, link }) => {
     <div className="card" data-aos="fade-in">
       <Slider ref={sliderRef} {...settings} className="custom-carousel">
         <CardSlide title={title} image={image} link={link} />
-        <div className="carousel_card" style={{ backgroundColor: "blue" }}>
-          Blue Card
+        <div className="carousel_card">
+          <h2>About this project...</h2>
+          <p>{about}</p>
+          <div className="links">
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+              className="links_project"
+            >
+              View project
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+            <a
+              href={gitLink}
+              target="_blank"
+              rel="noreferrer"
+              className="links_github"
+            >
+              View GitHub
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
-        <div className="carousel_card" style={{ backgroundColor: "red" }}>
-          Red Card
-        </div>
+        {/* <div className="carousel_card">Red Card</div> */}
       </Slider>
       <button
         className="custom-arrow custom-arrow-left"

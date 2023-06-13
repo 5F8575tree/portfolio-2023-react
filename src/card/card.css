@@ -69,3 +69,55 @@
   /* stroke: #fd6e5a; /* Set the stroke color to purple */
   /* stroke-width: 0.5px; Adjust the stroke width as needed */
 }
+
+.carousel_card {
+  border: solid 1px #6e5afd;
+  height: 176px;
+  width: 278px;
+  border-radius: 6px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #333;
+  color: #fffdf9;
+}
+
+.carousel_card > h2 {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.carousel_card p {
+  font-size: 14px;
+  padding: 12px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.carousel_card .links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.links_project {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.links_github {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.links_project:hover,
+.links_github:hover {
+  color: #6e5afd;
+}
+
+.links a i {
+  font-size: 12px;
+  margin-left: 6px;
+  color: #fd6e5a;
+}

@@ -34,3 +34,7 @@
 .portfolio_nav ul li.selected {
   font-weight: bold;
 }
+
+.cards {
+  align-self: center;
+}

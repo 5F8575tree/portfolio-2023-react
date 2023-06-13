@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Card from "../card/Card";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Portfolio() {
   const [selectedOption, setSelectedOption] = useState("All");
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
@@ -59,7 +65,7 @@ function Portfolio() {
   return (
     <div className="portfolio">
       <h1 className="portfolio_title">Portfolio</h1>
-      <div className="portfolio_nav">
+      <div className="portfolio_nav" data-aos="fade-in">
         <ul>
           <li
             className={selectedOption === "All" ? "selected" : ""}
@@ -87,7 +93,9 @@ function Portfolio() {
           </li>
         </ul>
       </div>
-      {renderCards()}
+      <div className="cards" data-aos="fade-in">
+        {renderCards()}
+      </div>
     </div>
   );
 }

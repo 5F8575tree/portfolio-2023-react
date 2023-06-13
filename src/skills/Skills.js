@@ -20,7 +20,7 @@ function Skills() {
           />
           <h2
             className="skills_box_title"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-delay="400"
           >
             Programming
@@ -44,7 +44,7 @@ function Skills() {
           />
           <h2
             className="skills_box_title"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-delay="400"
           >
             Design
@@ -68,7 +68,7 @@ function Skills() {
           />
           <h2
             className="skills_box_title"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-delay="400"
           >
             Influences

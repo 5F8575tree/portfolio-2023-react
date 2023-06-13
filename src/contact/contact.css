@@ -29,7 +29,7 @@
 .hero_btn {
   height: 66px;
   width: 248px;
-  margin-top: 50px;
+  margin: 50px auto;
   border-radius: 33px;
   background-color: #6e5afd;
   color: #fffdf9;
@@ -37,6 +37,6 @@
 }
 
 .email_link {
-  color: #6e5afd;
+  color: #fd6e5a;
   padding-top: 16px;
 }

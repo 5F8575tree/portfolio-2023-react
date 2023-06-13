@@ -7,12 +7,13 @@ function Hero() {
           <div className="hero_hello">Hello</div>
         </div>
         <div className="hero_title">
-          I'm <span>Mark Rawlins</span>
+          I'm <span className="underline">Mark Rawlins</span>
         </div>
         <div className="hero_intro">
           A freelance frontend engineer and UX / UI designer. My favourite tools
-          are <span>Figma</span>, Ruby on <span>Rails</span>, and{" "}
-          <span>React</span>.
+          are <span className="underline--small">Figma</span>, Ruby on{" "}
+          <span className="underline--small">Rails</span>, and{" "}
+          <span className="underline--small">React</span>.
         </div>
         <a
           href="mailto:mark.jeffrey.rawlins@gmail.com"

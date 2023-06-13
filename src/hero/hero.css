@@ -75,3 +75,55 @@
     opacity: 1;
   }
 }
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  z-index: -1;
+  width: 0;
+  height: 8px;
+  border-radius: 18%;
+  background-color: #fd6e5a;
+  animation-name: underline-animation;
+  animation-duration: 1800ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.underline--small {
+  position: relative;
+  display: inline-block;
+}
+
+.underline--small::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  z-index: -1;
+  width: 0;
+  height: 6px;
+  border-radius: 18%;
+  background-color: #fd6e5a;
+  animation-name: underline-animation;
+  animation-duration: 1800ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 800ms;
+}
+
+@keyframes underline-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

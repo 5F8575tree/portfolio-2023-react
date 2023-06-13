@@ -6,21 +6,26 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import sprite from "../sprite.svg";
 
-const CardSlide = ({ title, image }) => {
+const CardSlide = ({ title, image, link }) => {
   return (
     <div className="card_slide">
       <div className="card_intro">
         <img className="card_image" src={image} alt="website screenshot" />
-        <div className="card_title">
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card_title"
+        >
           {title}
           <i class="fa-solid fa-up-right-from-square"></i>
-        </div>
+        </a>
       </div>
     </div>
   );
 };
 
-const Card = ({ title, image }) => {
+const Card = ({ title, image, link }) => {
   const sliderRef = useRef(null);
 
   useEffect(() => {
@@ -51,7 +56,7 @@ const Card = ({ title, image }) => {
   return (
     <div className="card" data-aos="fade-in">
       <Slider ref={sliderRef} {...settings} className="custom-carousel">
-        <CardSlide title={title} image={image} />
+        <CardSlide title={title} image={image} link={link} />
         <div className="carousel_card" style={{ backgroundColor: "blue" }}>
           Blue Card
         </div>

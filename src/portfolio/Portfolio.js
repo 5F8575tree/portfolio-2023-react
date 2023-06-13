@@ -18,20 +18,46 @@ function Portfolio() {
     if (selectedOption === "All") {
       return (
         <>
-          <Card title="ii-Vent" image="../../ii-vent.png" />
-          <Card title="MyReads" image="../../my-reads.png" />
-          <Card title="Books B'n'B" image="../../books-bnb.png" />
+          <Card
+            title="ii-Vent"
+            image="../../ii-vent.png"
+            link="https://www.ii-vent.com"
+          />
+          <Card
+            title="MyReads"
+            image="../../my-reads.png"
+            link="https://rainbow-hotteok-58686d.netlify.app"
+          />
+          <Card
+            title="Books B'n'B"
+            image="../../books-bnb.png"
+            link="https://www.books-bnb.com"
+          />
         </>
       );
     } else if (selectedOption === "Ruby on Rails") {
       return (
         <>
-          <Card title="ii-Vent" image="../../ii-vent.png" />
-          <Card title="Books B'n'B" image="../../books-bnb.png" />
+          <Card
+            title="ii-Vent"
+            image="../../ii-vent.png"
+            link="https://www.ii-vent.com"
+          />
+          <Card
+            title="Books B'n'B"
+            image="../../books-bnb.png"
+            link="https://www.books-bnb.com"
+          />
         </>
       );
     } else if (selectedOption === "ReactJS") {
-      return <Card title="MyReads" image="../../my-reads.png" />;
+      return (
+        <Card
+          title="MyReads"
+          image="../../my-reads.png"
+          link="https://rainbow-hotteok-58686d.netlify.app"
+        />
+      );
     } else if (selectedOption === "Design Concepts") {
       return (
         <Card

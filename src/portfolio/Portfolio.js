@@ -21,7 +21,6 @@ function Portfolio() {
           <Card
             title="ii-Vent"
             image="../../ii-vent.png"
-            link="https://www.ii-vent.com"
             about="Music-event-themed task management app. I was the frontend engineer in a small team of four."
             gitLink="https://github.com/5F8575tree/ii-vent-ruby-rails"
           />
@@ -35,7 +34,6 @@ function Portfolio() {
           <Card
             title="Books B'n'B"
             image="../../books-bnb.png"
-            link="https://www.books-bnb.com"
             about="Ruby on Rails marketplace app that allows users to search and upload books, or borrow books from other users."
             gitLink="https://github.com/5F8575tree/books-bnb-ruby-rails"
           />
@@ -47,14 +45,12 @@ function Portfolio() {
           <Card
             title="ii-Vent"
             image="../../ii-vent.png"
-            link="https://www.ii-vent.com"
             about="A music-event-themed task management app. I was the frontend engineer in a small team of four."
             gitLink="https://github.com/5F8575tree/ii-vent-ruby-rails"
           />
           <Card
             title="Books B'n'B"
             image="../../books-bnb.png"
-            link="https://www.books-bnb.com"
             about="Ruby on Rails marketplace app that allows users to search and upload books, or borrow books from other users."
             gitLink="https://github.com/5F8575tree/books-bnb-ruby-rails"
           />

@@ -9,6 +9,12 @@
   animation-fill-mode: forwards;
 }
 
+@media screen and (min-width: 768px) {
+  .card {
+    margin-right: 40px;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

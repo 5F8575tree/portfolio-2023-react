@@ -43,3 +43,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* media queries */
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 40px;
+  }
+  .hero_top {
+    padding: 0 48px;
+    margin-top: 48px;
+  }
+  .hero_hello {
+    font-size: 28px;
+  }
+  .hero_title {
+    font-size: 36px;
+  }
+  .hero_intro {
+    font-size: 22px;
+  }
+  .hero_btn {
+    font-size: 22px;
+    margin-top: 60px;
+    margin-bottom: -40px;
+    z-index: 99;
+  }
+  .skills {
+    padding: 0 48px;
+    margin-top: -40px;
+  }
+  .skills_title {
+    font-size: 48px;
+  }
+  .skills_box_bottom p {
+    font-size: 20px;
+  }
+  .skills_box_title {
+    font-size: 36px;
+  }
+  .portfolio {
+    padding: 0 48px;
+  }
+  .portfolio_title {
+    font-size: 48px;
+  }
+  .portfolio_nav {
+    font-size: 18px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact {
+    margin: 50px 40px;
+  }
+  .contact_title {
+    font-size: 48px;
+    text-align: center;
+  }
+  .contact_text {
+    font-size: 22px;
+    text-align: center;
+  }
+  .email_link {
+    margin-top: 60px;
+    font-size: 22px;
+  }
+  .social {
+    width: 250px;
+  }
+  .social img {
+    height: 50px;
+    width: 50px;
+  }
+  .copyright {
+    font-size: 16px;
+  }
+  .mainMenu li a {
+    font-size: 1.8rem;
+  }
+  .icons i {
+    font-size: 3rem;
+  }
+}

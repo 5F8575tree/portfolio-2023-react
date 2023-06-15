@@ -17,6 +17,10 @@
   margin-bottom: 50px;
 }
 
+.portfolio_nav ul li {
+  list-style: none;
+}
+
 .portfolio_nav ul li:not(:last-child) {
   margin-bottom: 24px;
 }

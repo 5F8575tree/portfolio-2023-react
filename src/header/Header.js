@@ -42,9 +42,27 @@ function Header() {
           <i className="fas fa-times"></i>
         </div>
         <span className="icons">
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-github"></i>
-          <i className="fab fa-linkedin"></i>
+          <a
+            href="https://www.linkedin.com/in/markjrawlins/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/5F8575tree"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href="https://twitter.com/5F8575tree"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-twitter"></i>
+          </a>
         </span>
       </ul>
     </div>

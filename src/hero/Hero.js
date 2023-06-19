@@ -1,4 +1,32 @@
+import { useState, useEffect } from "react";
+
 function Hero() {
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const [shouldFadeIcons, setShouldFadeIcons] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 998);
+    };
+
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setShouldFadeIcons(true);
+      } else {
+        setShouldFadeIcons(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+    handleResize(); // Initial check
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="hero">
       <div className="hero_top">
@@ -23,13 +51,31 @@ function Hero() {
         >
           <p>Contact Me</p>
         </a>
+        {isLargeScreen && (
+          <div className={`hero_icons ${shouldFadeIcons ? "fade-out" : ""}`}>
+            <i className="fa-brands fa-react"></i>
+            <i className="fa-brands fa-square-js"></i>
+            <i className="fa-brands fa-css3-alt"></i>
+          </div>
+        )}
       </div>
-      <img
-        className="hero_image"
-        src="../../portfolio-photo.jpg"
-        alt="Mark Rawlins' head with plain background in grey scale"
-        id="skills"
-      />
+      {isLargeScreen ? (
+        <div className="hero_image_container">
+          <img
+            className="hero_image"
+            src="../../seriousFace.jpeg"
+            alt="Mark Rawlins' head in greyscale"
+            id="skills"
+          />
+        </div>
+      ) : (
+        <img
+          className="hero_image"
+          src="../../portfolio-photo.jpg"
+          alt="Mark Rawlins' head with plain background in greyscale"
+          id="skills"
+        />
+      )}
     </div>
   );
 }

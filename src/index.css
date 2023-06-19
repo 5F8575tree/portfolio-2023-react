@@ -172,7 +172,7 @@ code {
     display: flex;
     flex-direction: row;
     list-style: none;
-    background-color: #fffdf9;
+    background-color: transparent;
   }
 
   .mainMenu li {
@@ -304,5 +304,123 @@ code {
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+
+  /* SKILLS */
+  .skills_title {
+    font-size: 46px;
+    margin: 120px auto;
+  }
+  .skills {
+    padding: auto 150px;
+    margin: auto 250px;
+  }
+  .skills_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .skills_title {
+    margin-bottom: 60px;
+  }
+  .skills_box_top {
+    padding: 32px;
+  }
+  .skills_box_top h2 {
+    font-size: 24px;
+    padding-top: 18px;
+  }
+  .skills_box_bottom p {
+    font-size: 16px;
+  }
+  .skills_box--individual:not(:last-child) {
+    border-right: 1px solid #e9e2d6;
+  }
+
+  /* PORTFOLIO */
+  .portfolio_title {
+    margin: 50px auto;
+    padding-top: 80px;
+  }
+  .portfolio_nav {
+    font-size: 18px;
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  .portfolio_nav ul li {
+    cursor: pointer;
+  }
+  .card {
+    width: 478px;
+    margin: 80px;
+  }
+  .card:not(:last-child) {
+    margin-top: auto;
+  }
+  .card_image {
+    height: auto;
+    object-fit: contain;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .card_title {
+    bottom: 30px;
+    font-size: 18px;
+    padding: 8px 24px;
+    margin-left: 40px;
+  }
+
+  .card_title > i {
+    font-size: 16px;
+    margin-left: 16px;
+    color: #fd6e5a;
+    cursor: pointer;
+  }
+
+  .custom-arrow {
+    top: 65%;
+  }
+
+  .custom-arrow-left {
+    left: -70px;
+  }
+
+  .custom-arrow-right {
+    right: -70px;
+  }
+
+  .custom-arrow svg {
+    width: 64px;
+    height: 64px;
+    fill: transparent; /* Set the fill to transparent */
+    stroke: #fd6e5a; /* Set the stroke color to purple */
+    stroke-width: 0.3px;
+  }
+
+  .custom-arrow svg:hover {
+    width: 64px;
+    height: 64px;
+    fill: #fd6e5a;
+  }
+
+  .carousel_card {
+    height: 232px;
+    padding: 24px;
+  }
+
+  .carousel_card > h2 {
+    font-size: 18px;
+  }
+
+  .carousel_card p {
+    font-size: 16px;
+  }
+
+  .carousel_card .links {
+    font-size: 14px;
+  }
+
+  .links_project:hover,
+  .links_github:hover {
+    color: #fd6e5a;
   }
 }

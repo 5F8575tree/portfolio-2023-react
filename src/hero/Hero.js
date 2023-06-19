@@ -39,9 +39,9 @@ function Hero() {
         </div>
         <div className="hero_intro">
           A freelance frontend engineer and UX / UI designer. My favourite tools
-          are <span className="underline--small">Figma</span>, Ruby on{" "}
-          <span className="underline--small">Rails</span>, and{" "}
-          <span className="underline--small">React</span>.
+          are <span className="underline--small">Figma,</span> Ruby on{" "}
+          <span className="underline--small">Rails,</span> and{" "}
+          <span className="underline--small">React</span>
         </div>
         <a
           href="mailto:mark.jeffrey.rawlins@gmail.com"

@@ -137,6 +137,9 @@ code {
 
   .header.scrolled {
     border-bottom: 0;
+    background-color: #333;
+    color: #fffdf9;
+    transition: all 0.3s ease-in-out;
   }
 
   .header::after {
@@ -187,6 +190,10 @@ code {
     transition: color 0.5s ease, border-bottom 0.3s ease-in;
     text-transform: none;
     padding-bottom: 12px;
+  }
+
+  .scrolled .mainMenu li a {
+    color: #fffdf9;
   }
 
   .mainMenu li a:hover {

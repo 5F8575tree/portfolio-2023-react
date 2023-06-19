@@ -71,7 +71,7 @@ function Header() {
             <i className="fas fa-times"></i>
           </div>
         )}
-        {isLargeScreen && (
+        {isMenuOpen && (
           <span className="icons">
             <a
               href="https://www.linkedin.com/in/markjrawlins/"

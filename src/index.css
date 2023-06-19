@@ -423,4 +423,43 @@ code {
   .links_github:hover {
     color: #fd6e5a;
   }
+
+  /* CONTACT */
+  .contact {
+    margin: 150px 20px;
+  }
+
+  .contact_title {
+    font-size: 46px;
+    margin-bottom: 20px;
+  }
+
+  .contact_text {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .email_link {
+    padding-top: 10px;
+  }
+
+  /* FOOTER */
+  .footer {
+    background-color: #333;
+  }
+
+  .social i:hover {
+    color: #fd6e5a;
+    cursor: pointer;
+  }
+
+  .social i {
+    font-size: 48px;
+    color: #fffdf9;
+    padding-top: 40px;
+  }
+
+  .copyright {
+    color: #fffdf9;
+  }
 }

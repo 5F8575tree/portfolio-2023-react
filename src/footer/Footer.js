@@ -7,21 +7,21 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src="../../linkedin-logo 1.png" alt="LinkedIn logo" />
+          <i className="fab fa-linkedin"></i>
         </a>
         <a
           href="https://github.com/5F8575tree"
           target="_blank"
           rel="noreferrer"
         >
-          <img src="../../Vector.png" alt="Github logo" />
+          <i className="fab fa-github"></i>
         </a>
         <a
           href="https://twitter.com/5F8575tree"
           target="_blank"
           rel="noreferrer"
         >
-          <img src="../../twitter 1.png" alt="Twitter logo" />
+          <i className="fab fa-twitter"></i>
         </a>
       </div>
       <div className="copyright">

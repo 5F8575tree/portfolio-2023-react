@@ -49,23 +49,42 @@ code {
   .header {
     padding: 40px;
   }
+  .hero {
+    justify-content: center;
+    align-items: center;
+  }
   .hero_top {
     padding: 0 48px;
     margin-top: 48px;
   }
   .hero_hello {
-    font-size: 28px;
-  }
-  .hero_title {
-    font-size: 36px;
-  }
-  .hero_intro {
     font-size: 22px;
   }
-  .hero_btn {
+  .hero_title {
+    font-size: 28px;
+  }
+  .hero_intro {
     font-size: 16px;
+  }
+  .hero_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 50px auto;
+  }
+  .hero_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .hero_btn {
+    font-size: 14px;
     margin-top: 60px;
-    margin-bottom: -40px;
+    margin-bottom: 10px;
     z-index: 99;
   }
   .skills {
@@ -73,22 +92,22 @@ code {
     margin-top: -40px;
   }
   .skills_title {
-    font-size: 48px;
+    font-size: 32px;
   }
   .skills_box_bottom p {
-    font-size: 20px;
+    font-size: 18px;
   }
   .skills_box_title {
-    font-size: 36px;
+    font-size: 28px;
   }
   .portfolio {
     padding: 0 48px;
   }
   .portfolio_title {
-    font-size: 48px;
+    font-size: 32px;
   }
   .portfolio_nav {
-    font-size: 18px;
+    font-size: 14px;
   }
   .cards {
     display: flex;
@@ -101,32 +120,32 @@ code {
     margin: 50px 40px;
   }
   .contact_title {
-    font-size: 48px;
+    font-size: 32px;
     text-align: center;
   }
   .contact_text {
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
   }
   .email_link {
     margin-top: 60px;
-    font-size: 22px;
+    font-size: 16px;
   }
   .social {
     width: 250px;
   }
   .social img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
   .copyright {
-    font-size: 16px;
+    font-size: 14px;
   }
   .mainMenu li a {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .icons i {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 

@@ -59,7 +59,7 @@ function Hero() {
           </div>
         )}
       </div>
-      {isLargeScreen ? (
+      {window.innerWidth >= 768 && (
         <div className="hero_image_container">
           <img
             className="hero_image"
@@ -68,13 +68,17 @@ function Hero() {
             id="skills"
           />
         </div>
-      ) : (
-        <img
-          className="hero_image"
-          src="../../portfolio-photo.jpg"
-          alt="Mark Rawlins' head with plain background in greyscale"
-          id="skills"
-        />
+      )}
+      {/* Small screen */}
+      {window.innerWidth < 768 && (
+        <div className="hero_image_container">
+          <img
+            className="hero_image"
+            src="../../portfolio-photo.jpg"
+            alt="Mark Rawlins' head with plain background in greyscale"
+            id="skills"
+          />
+        </div>
       )}
     </div>
   );
